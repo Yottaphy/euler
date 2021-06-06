@@ -1,0 +1,1 @@
+print(str(sum([int(line) for line in open('13_nums.txt')]))[:10])
