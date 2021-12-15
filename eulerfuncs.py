@@ -16,3 +16,7 @@ def factorial(n):
     for i in range(1,n+1):
         res *= i
     return res
+    
+def isPalindrome(num):    
+    reverse = int(str(num)[::-1])
+    return num == reverse

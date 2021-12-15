@@ -1,6 +1,3 @@
-import numpy as np
-import math
-
 def iteration(num):
     reverse = int(str(num)[::-1])
     return num + reverse
