@@ -20,3 +20,12 @@ def factorial(n):
 def isPalindrome(num):    
     reverse = int(str(num)[::-1])
     return num == reverse
+
+def printDivisors(n):
+    divisors = [1]
+    for i in range(2,int(sqrt(n)+1)):
+        if n % i == 0:
+            divisors.append(i)
+            if not int(n / i) == int(i): divisors.append(int(n/i)) 
+    divisors.sort()
+    return divisors
